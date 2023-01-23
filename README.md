@@ -29,7 +29,7 @@ git checkout dev
 * Run npm installation.
 
 ```bash
-npm ci
+npm install
 ```
 
 * Copy `.env.example` to `.env` and update the websocker server and client ports if needed.
