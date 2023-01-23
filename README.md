@@ -8,7 +8,9 @@ It is built using Node.js and TypeScript.
 
 ## Presets
 
-Node.js v18.0.0 is installed.
+* Node.js v18.0.0 is installed.
+
+* Make sure print screen functionality works on your OS. It might not work on Ubuntu.
 
 ## Getting Started
 
