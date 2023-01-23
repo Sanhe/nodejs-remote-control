@@ -23,10 +23,12 @@ const wsServer = (port: number) => {
 
     duplex.on('data', async (data: string) => {
       try {
-        log(data);
+        log(`Received command: ${data}`);
 
         const response = await handleCommand(data);
-        // console.log(response);
+
+        log(`Command result: ${response}`);
+
         duplex.write(response);
       } catch (error) {
         const errorMessage =

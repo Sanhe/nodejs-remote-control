@@ -2,7 +2,7 @@ import { ARGS_INDEX_FIRST } from '../../../shared/argsIndex';
 import assertNotEmpty from '../../../shared/assert/assertNotEmpty';
 import { SQUARE_ARGUMENTS_LENGTH } from './argumentsLength';
 import AbstractDrawAction from './AbstractDrawAction';
-import drawRectangle from './dratRectangle';
+import drawRectangle from './drawRectangle';
 import { DRAW_SQUARE_COMMAND_NAME } from './commandName';
 
 class SquareDrawAction extends AbstractDrawAction {
@@ -25,7 +25,7 @@ class SquareDrawAction extends AbstractDrawAction {
   }
 
   protected override formatResponse(): string {
-    return `${DRAW_SQUARE_COMMAND_NAME} {${this.width}}`;
+    return `${DRAW_SQUARE_COMMAND_NAME} ${this.width}`;
   }
 
   protected override draw = async (): Promise<void> => {

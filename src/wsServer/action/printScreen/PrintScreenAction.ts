@@ -23,7 +23,7 @@ class PrintScreenAction implements ActionInterface {
   protected async processConfiguration(): Promise<void> {
     const { x, y } = await mouse.getPosition();
 
-    log(`print-screen cursor position: x: ${x}, y: ${y}`);
+    log(`Print-screen cursor position: x: ${x}, y: ${y}`);
 
     this.left = x - PRINT_SCREEN_HALF_WIDTH;
     this.left = Math.max(0, this.left);

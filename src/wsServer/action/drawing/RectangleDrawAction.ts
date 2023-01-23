@@ -2,7 +2,7 @@ import AbstractDrawAction from './AbstractDrawAction';
 import { ARGS_INDEX_FIRST, ARGS_INDEX_SECOND } from '../../../shared/argsIndex';
 import assertNotEmpty from '../../../shared/assert/assertNotEmpty';
 import { RECTANGLE_ARGUMENTS_LENGTH } from './argumentsLength';
-import drawRectangle from './dratRectangle';
+import drawRectangle from './drawRectangle';
 import { DRAW_RECTANGLE_COMMAND_NAME } from './commandName';
 
 class RectangleDrawAction extends AbstractDrawAction {
