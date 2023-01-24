@@ -1,21 +1,44 @@
-# RSSchool NodeJS websocket task template
-> Static http server and base task packages. 
-> By default WebSocket client tries to connect to the 8080 port.
+# NodeJS Websocket Remote Control
 
-## Installation
-1. Clone/download repo
-2. `npm install`
+Simple NodeJS Websocket Remote Control server with static web client.
 
-## Usage
-**Development**
+## Overview
 
-`npm run start:dev`
+It is built using Node.js and TypeScript.
 
-* App served @ `http://localhost:8181` with nodemon
+## Presets
 
-**Production**
+* Node.js v18.0.0 is installed.
 
-`npm run start`
+* Make sure print screen functionality works on your OS. It might not work on Ubuntu.
+
+## Getting Started
+
+* Clone the repository to get the latest version of the code.
+
+```bash
+git clone git@github.com:Sanhe/nodejs-remote-control.git
+```
+
+* Switch to dev branch.
+
+```bash
+git checkout dev
+```
+
+* Run npm installation.
+
+```bash
+npm install
+```
+
+* Copy `.env.example` to `.env` and update the websocker server and client ports if needed.
+
+
+## Run the application
+
+See package.json for all available commands.
+
 
 * App served @ `http://localhost:8181` without nodemon
 
